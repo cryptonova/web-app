@@ -1,6 +1,8 @@
-# cryptonova
 
-> Cryptonova web app
+<p align="center">
+  <img height="100" src="https://s3.eu-west-2.amazonaws.com/cryptonova-prod/img/cryptonova-github.png">
+</p>
+
 
 ## Build Setup
 
