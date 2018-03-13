@@ -1,0 +1,17 @@
+@import "../variables";
+
+.footer {
+  padding: $padding * 2 $padding;
+  background: $bg-color;
+  color: white;
+  img {
+    transition: all 0.2s;
+    filter: grayscale(100);
+  }
+}
+
+.footer:hover {
+  img {
+    filter: grayscale(0);
+  }
+}

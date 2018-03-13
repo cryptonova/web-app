@@ -1,0 +1,112 @@
+@import "../variables";
+
+.icon {
+  cursor: pointer;
+}
+
+.menu-label {
+  height: 3.3rem;
+  padding: 0 1.5rem;
+}
+
+$menu-width: 15rem;
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: white;
+  width: $menu-width;
+  z-index: 11;
+  height: 100vh;
+  overflow-y: scroll;
+
+  .card {
+    border-radius: 0;
+    box-shadow: none;
+  }
+  a {
+    transition: all 0.2s;
+    &.router-link-exact-active, &.router-link-exact-active:hover {
+      background-color: whitesmoke;
+      color: #363636;
+      font-weight: $weight-medium;
+    }
+  }
+}
+
+.menu-list-container {
+  height: 100%;
+  overflow-y: scroll;
+}
+
+@media screen and (max-width: #{$fullhd}) {
+  .menu {
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+    &.is-active {
+      transform: translateX(0);
+      @media screen and (max-width: #{$tablet}) {
+      }
+    }
+  }
+  .is-visible-fullhd-down {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: #{$tablet}) {
+  .container {
+    padding: 0;
+  }
+  .is-overlap {
+    margin-top: 0;
+  }
+}
+
+.main {
+  transition: all 0.3s ease;
+  width: 100%;
+  &.is-centered {
+    @media screen and (min-width: #{$fullhd}) {
+      // Transform translateX messes with position fixed elements
+      // Position relative doesn't work with scrollIntoView
+      padding-left: $menu-width / 2;
+    }
+  }
+}
+
+@media screen and (max-width: #{$fullhd}) {
+  .menu-backdrop {
+    opacity: 0;
+    background: black;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 0;
+    transition: all 0.3s ease;
+    &.is-active {
+      opacity: 0.5;
+      z-index: 11;
+    }
+  }
+}
+
+.menu-list li ul.menu-list-details {
+  border-left: none;
+  margin: 0;
+  padding-left: 2rem;
+  font-size: $size-7;
+  li {
+    padding: 0.5rem 0.75rem;
+    &:hover {
+      background: none;
+    }
+  }
+}
+
+.card .menu-label, .card .menu-list li a {
+  padding: $grid-gap
+}
