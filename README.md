@@ -3,6 +3,8 @@
   <img height="100" src="https://s3.eu-west-2.amazonaws.com/cryptonova-prod/img/cryptonova-github.png">
 </p>
 
+## About
+Cryotonova is an open source cryptocurrency market capitalization tool and portfolio built with the popular JavaScript framework [Vue.js](https://vuejs.org/).
 
 ## Build Setup
 
