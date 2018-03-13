@@ -6,29 +6,12 @@
 ## About
 Cryotonova is an open source cryptocurrency market capitalization tool and portfolio built with the popular JavaScript framework [Vue.js](https://vuejs.org/).
 
-## Build Setup
+## Getting Started
+
+1. Make sure you have a local [API server](https://github.com/cryptonova/api) up and running.
+2. Run the follwing commands to install dependencies and to run a local client server.
 
 ``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
+yarn
 npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-
-# run unit tests
-npm run unit
-
-# run e2e tests
-npm run e2e
-
-# run all tests
-npm test
 ```
-
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
