@@ -22,7 +22,7 @@
     "chart.piecelabel.js": "^0.9.0",
     "countup.js": "^1.9.3",
     "lodash": "^4.17.5",
-    "moment": "^2.20.1",
+    "moment": "^2.29.2",
     "moment-timezone": "^0.5.14",
     "vue": "^2.5.2",
     "vue-analytics": "^5.9.1",
