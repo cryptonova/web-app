@@ -23,7 +23,7 @@
     "countup.js": "^1.9.3",
     "lodash": "^4.17.5",
     "moment": "^2.20.1",
-    "moment-timezone": "^0.5.14",
+    "moment-timezone": "^0.5.35",
     "vue": "^2.5.2",
     "vue-analytics": "^5.9.1",
     "vue-axios": "^2.0.2",
